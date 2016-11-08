@@ -1,3 +1,4 @@
+<?php include "valikko.php"; ?>
 <?php
 if(isset($_GET['btn'])) {
 	$enimi=$_GET['en'];
@@ -5,7 +6,7 @@ if(isset($_GET['btn'])) {
 	echo 'Terve '.$enimi.' '.$snimi;
 }
 ?>
-<h1>Henkilötiedot</h1>
+<h1>Henkilötiedot(get)</h1>
 <FORM action="get_esim.php" method="GET">
 <label>Etunimi</label><input type="text" name="en">
 <br>
@@ -13,3 +14,5 @@ if(isset($_GET['btn'])) {
 <br>
 <input type="submit" name="btn" value="Lähetä">
 </FORM>
+
+<?php include "footer.php"; ?>
