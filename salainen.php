@@ -5,7 +5,7 @@ session_start();
 <h1>Salainen</h1>
 <p>
 <?php
-echo 'Tervetuloa <b>'.$SESSION['tunnus'].'</b>';
+echo 'Tervetuloa <b>'.$_SESSION['tunnus'].'</b>';
 ?>
 <p>
 	Terve

@@ -1,6 +1,6 @@
 <?php
 session_start();
-if($SESSION['login']==TRUE) {
+if($_SESSION['login']==TRUE) {
 	$user=$_SESSION['tunnus'];
 }
 else {
